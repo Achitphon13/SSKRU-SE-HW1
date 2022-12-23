@@ -177,6 +177,8 @@ function equalClicked()
 function delClicked()
 {
     dbg("del is clicked");
+    currentOutput = currentOutput.substring(0, currentOutput.length - 1)
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ให้ใช้ฟังก์ชั่น substring() หรือ slice() เพื่อลบตัวอักษรท้ายสุด 
@@ -190,6 +192,7 @@ function delClicked()
 
         ทดสอบการทำงานของสองฟังก์ชั่นได้ตามต้องการ
     */
+    
 }
 
 function clearClicked()
@@ -202,6 +205,9 @@ function clearClicked()
             document.getElementById("ไอดีของ HTML element").value = "ค่าที่ต้องการ";
 
     */ 
+            currentOutput = "";
+    document.getElementById("display").value = "";
+
 }
 
 
@@ -209,9 +215,13 @@ function clearClicked()
 function poClicked()
 {
     dbg("( is clicked");
+    currentOutput += "(";
+    document.getElementById("display").value = currentOutput;
 }
 
 function pcClicked()
 {
     dbg(") is clicked");
+    currentOutput += ")";
+    document.getElementById("display").value = currentOutput;
 }
