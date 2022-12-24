@@ -2,30 +2,44 @@
     ตัวอย่างสามารถดูได้ในโปรแกรม calculator ใน windows 
 
     Reference: https://www.w3schools.com/cssref/index.php
+    Thai:      https://www.w3bai.com/th/cssref/default.html
 */
 
 /* ส่วนตัวของเว็บ */
+
 body{
     /* ให้ข้อความทุกอย่างจัดอยู่ตรงกลาง */
-    text-align: center; 
+    margin: auto;
+    text-align: center;
+     
     /* ให้มีกรอบสไตล์ groove */
-    border-style: groove;
+    
+    width: 500px;
+    height: 450px;
+    border-radius: 40px;
     /* ให้มีความกว้างอย่างน้อยๆไม่ต่ำกว่า 250 pixels */
     min-width: 250px;
+    
 }
 
 /* ส่วนหัวข้อของหน้าเว็บ */
 h1{
-    /* ตั้งค่าขนาดฟ้อนท์ให้ไม่เล็กกว่า 20 pixels และใหญ่เท่ากับ 20px บวกกับ 3% ของ viewport ฝั่งที่เล็กสุด */
-    font-size: calc(20px + 3vmin);
+    /* ตั้งค่าขนาดฟ้อนท์ให้ไม่เล็กกว่า 20 pixels และใหญ่เท่ากับ 20px บวกกับ 3% ของ viewport ฝั่งที่เล็กสุด
+    ตัว  home ข้างบน */
+    font-size: calc(30px);
+    margin: auto;
+ 
 }
 
 /* ส่วนตัวเครื่องคิดเลข */
 #calc{
     background-color: aquamarine;
-    width: 300px;
-    height: 300px;
+    border-radius: 10px;
+    width: 230px;
+    height: 320px;
     margin: auto;
+    
+    
     
 
 }
@@ -40,64 +54,78 @@ h1{
     /* กว้าง 40% ของจอ สูง 10% ของจอ */
     width: 15vw;
     height: 5vh;
-
     /* กว้างไม่ต่ำกว่า 200 pixels   */
-    min-width: 200px;
-    
+    min-width: 205px;  
+    margin: auto;
 }
 
 #inputPanel{
     position: relative;
     display: inline-block;
+    
+    
 }
 
 #display{
     text-align: left;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 43px;
     font-size: calc(12px + 1vmin);
-    
+    background-color: rgb(191, 207, 202);
+    border-radius: 10px;
+   
 }
 
 .bt{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: white;
-    background-color: black;
-    border-color: aquamarine;
-    margin: 5px;
-    font-size: 20px;
+    border-color: rgb(0, 0, 0);  
+    font-size: 25px;
+    margin-right: 0.5px;
+    margin-left: 0.5px;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
     cursor: pointer;
+    border-radius: 10px;
+    font-style: normal;
+    
     
 }
 
 #zero{
-    width: 40px;
-    color: aqua;
-    background-color: brown;
-    border-radius: 10%;
+    width: 50px;
 }
 
 .bt-num{
-    background-color: green;
+    background-color: rgb(118, 149, 177);
+    
+}
+
+.bt_pls{
+    background-color: rgb(148, 210, 238);
 }
 
 .bt-ops{
-    background-color: red;
+    background-color: rgb(25, 147, 72);
 
+}
+
+.ops_pls{
+    background-color: rgb(25, 184, 51);
 }
 
 .bt-del{
-    background-color: blue;
-
+    background-color: rgb(225, 28, 140);
 }
 
 .bt-clear{
-    background-color: purple;
+    background-color: rgb(204, 47, 47);
+    
 
 }
 
 .bt-optional{
-    background-color: pink;
+    background-color: rgb(78, 185, 235);
 
 }
